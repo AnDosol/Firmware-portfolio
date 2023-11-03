@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Firmware_Portfolio">
+    <meta name="author" content="ANDOSOL">
+    <title>Firmware_Portfolio_ANDOSOL</title>
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+    <!-- Web Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600%7cPlayfair+Display:400i" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Plugins-->
+    <link href="assets/css/plugins.min.css" rel="stylesheet">
+    <!-- Template core CSS-->
+    <link href="assets/css/template.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Preloader-->
+    <div class="page-loader">
+        <div class="page-loader-inner">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader end-->
+
+    <!-- Header-->
+    <header class="header header-transparent">
+        <div class="container-fluid">
+            <!-- Brand-->
+            <div class="inner-header"><a class="inner-brand" href="index.html">Firmware_Portfolio_ANDOSOL</a></div>
+            <!-- Navigation-->
+            <div class="inner-navigation collapse">
+                <div class="inner-nav">
+                    <ul>
+                        <li class="menu-item-has-children menu-item-has-mega-menu"><a href="index.html"><span
+                                    class="menu-item-span">Home</span></a>                          
+                        </li>
+
+                        <li class="menu-item-has-children"><a href=""><span class="menu-item-span">Portfolio</span></a>
+                            <ul class="sub-menu">
+                                <li><a href="portfolio-maincontroller.html">Main Controller</a></li>
+                                <li><a href="portfolio-HMI_ECU.html">HMI & ECU</a></li>
+                                <li><a href="portfolio-Remote.html">Remote</a></li>                                
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href="me.html"><span class="menu-item-span">Me</span></a>                            
+                        </li>
+                        <li class="menu-item-has-children"><a href="contact.html"><span class="menu-item-span">Contact</span></a>                     
+                        </li>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header end-->
+
+    <!-- Wrapper-->
+    <div class="wrapper">
+        <!-- Hero-->
+        <section class="module-cover parallax text-center" data-background="jinwoosmc/Background_p2.jpg"
+            data-overlay="0.8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Main Controller</h2>
+                        <p>aerial work platform truck system</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero end-->
+
+        <!-- Blog-->
+        <section class="module">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 m-auto">
+
+                        <!-- Post-->
+                        <article class="post">
+                            <div class="post-preview"><img src="jinwoosmc/Truck.jpg" alt=""></div>
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title"><a>aerial work platform truck</a></h2>
+                                </div>
+                                <div class="post-content">
+                                    <p>The aerial work platform is a specially designed vehicle for safe elevated
+                                        operations.<br><br>
+                                        Key sensors installed to ensure the vehicle's safe functioning are as
+                                        follows:<br><br>
+
+                                        Sensors 1 to 4 consist of length sensors for stable support and proximity
+                                        sensors to verify the support status. (Greater support length allows the vehicle
+                                        to operate safely at higher heights.)<br><br>
+
+                                        Sensor 5 is an encoder measuring the current angle of the platform, indicating
+                                        angles on the XY plane.<br><br>
+
+                                        Sensor 6 includes a length sensor for determining the work length and a
+                                        gyroscope incline sensor for measuring angles on the XZ plane.<br><br>
+
+                                        Sensor 7 incorporates a load cell to precisely measure the working weight. These
+                                        sensors, integrated with others, calculate and control the vehicle's operations
+                                        precisely, ensuring safe operations based on the vehicle's state.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Post end-->
+
+                        <!-- Post-->
+                        <article class="post">
+                            <div class="post-preview">
+                                <div class="image-slider owl-carousel"><img src="jinwoosmc/AML_PCB.jpg" alt=""><img
+                                        src="jinwoosmc/AML_Artwork.jpg" alt=""><img src="jinwoosmc/AML_Schemetic.jpg"
+                                        alt=""></div>
+                            </div>
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title"><a>Hardware</a></h2>
+                                </div>
+                                <div class="post-content">
+                                    <p>Before hardware design, I analyzed the characteristics of sensors required for
+                                        the system and the features of the system controlled through PCB connections.
+                                        I identified the requirements for communication protocols and interfaces such as
+                                        PWM, CAN, I2C, GPIO, and USART, and incorporated them into the design.<br><br>
+
+                                        <strong>PWM</strong> : I determined the operating voltage and frequency of the
+                                        PWM ports used to control hydraulic solenoid valves.<br>
+                                        <strong>CAN</strong> : I established the CAN communication connections for data
+                                        exchange with other controllers.<br>
+                                        <strong>I2C</strong> : Utilizing I2C communication, I integrated an ADC module
+                                        with 16-bit resolution.<br>
+                                        <strong>GPIO</strong> : I ensured an adequate number of ports for sensors and
+                                        external devices requiring input and output.<br>
+                                        <strong>USART</strong> : I implemented USART ports for debugging purposes.<br>
+
+                                        <br>Additionally, I designed circuits to connect sensors such as encoders,
+                                        length sensors, and angle sensors, as well as solenoid valves.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Post end-->
+
+                        <!-- Post-->
+                        <article class="post">
+                            <div class="post-preview"><a href="#"><img src="jinwoosmc/AML_Firmware_1.jpg" alt=""></a>
+                            </div>
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title"><a>Firmware</a></h2>
+                                </div>
+                                <div class="post-content">
+                                    <p>Firmware development was carried out using Simulink. Custom S-Function blocks in
+                                        C language were developed for devices such as CAN, I2C, encoders, and EEPROMs as
+                                        required.<br><br>
+
+                                        Additionally, graphs illustrating the working radius based on PID control,
+                                        length, and angle were created using MATLAB M-files and integrated into Simulink
+                                        blocks. Stateflow was utilized for implementing simple conditional
+                                        statements.<br><br>
+
+                                        These techniques were programmed and tested on the MCU using MATLAB and
+                                        Simulink.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Post end-->
+
+                        <!-- Post-->
+                        <article class="post">
+                            <div class="modal-video-container">
+                                <img src="jinwoosmc/Background_p2.jpg" alt="">
+                                <a class="play-button" href="jinwoosmc/work_radious.mp4"></a>
+                            </div>
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title"><a>Introduction to Aerial Work Platform Safe Operating Range
+                                            Calculation Project</a></h2>
+                                </div>
+                                <div class="post-content">
+                                    <p>The video above illustrates the calculated safe operating range of an aerial work
+                                        platform, represented graphically. The left graph depicts the work area when
+                                        viewed from above, varying with the encoder's angle, while the right graph
+                                        displays the lateral working length based on the encoder and angle.<br><br>
+
+                                        These graphs are derived from real-world data obtained by testing the aerial
+                                        work platform. They represent how the working environment changes concerning
+                                        factors like angle, slope, length sensor values, and weight, formulated into
+                                        mathematical expressions.<br><br>
+
+                                        Uncovered in the video are the input parameters for the function used to
+                                        generate these graphs. These parameters encompass weight, length sensor values,
+                                        angle sensor values, slope sensor values, and the length sensor values of the
+                                        vehicle's support base.<br><br>
+
+                                        In this project, we explored methods to calculate and visually represent the
+                                        safe operating range of the aerial work platform using MATLAB.<br><br>
+                                    </p>
+                                    <div class="post-preview">
+                                        <div class="image-slider owl-carousel"><img src="jinwoosmc/work_radious_0.jpg"
+                                                alt=""><img src="jinwoosmc/work_radious_1.jpg" alt=""><img
+                                                src="jinwoosmc/work_radious_2.jpg" alt=""><img
+                                                src="jinwoosmc/work_radious_3.jpg" alt=""><img
+                                                src="jinwoosmc/work_radious_4.jpg" alt=""></div>
+                                    </div>
+                                    <p>The image above illustrates the process of drawing the working radius using
+                                        MATLAB.<br><br>
+
+                                        Formulas involving trigonometric functions, equations of circles, and more were
+                                        utilized. I systematically plotted graphs using MATLAB, testing various changes
+                                        in sensors to observe how they impacted the working radius. This process
+                                        involved analyzing the actual variations in the graph as the sensors' values
+                                        changed.</p>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <article class="post">
+                            <div class="modal-video-container">
+                                <img src="jinwoosmc/Movement.jpg" alt="">
+                                <a class="play-button" href="jinwoosmc/Movement.mp4"></a>
+                            </div>
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title"><a>Implementing Smooth Movements for Aerial Work
+                                            Platforms</a></h2>
+                                </div>
+                                <div class="post-content">
+                                    <p>The remote control signals are processed to operate the movements of the aerial
+                                        work platform. The received signals are outputted as PWM signals, and to ensure
+                                        smooth movements, they are processed using PID or RAMP algorithms. The video
+                                        above demonstrates the smooth input of PWM signals using the PID method.<br><br>
+
+                                        Furthermore, to avoid jolting when extending or retracting the platform fully, a
+                                        deceleration programming is implemented from one meter before the full extension
+                                        or retraction point.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="post">
+                            <div class="post-preview"><a href="#"><img src="jinwoosmc/Remote_pid.jpg" alt=""></a>
+
+                                <div class="post-wrapper">
+                                    <div class="post-header">
+                                        <h2 class="post-title"><a>Smooth PWM Control for Remote Operation</a></h2>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>PWM signals are generated based on remote control signals. Without additional
+                                            processing, rapid movements of the platform can lead to hazardous
+                                            operations. Therefore, PID control is applied to the PWM signals to ensure
+                                            smooth movements and prevent abrupt actions.<br><br></p>
+                                    </div>
+                                    <div class="modal-video-container">
+                                        <img src="jinwoosmc/remote_pid_img.jpg" alt="">
+                                        <a class="play-button" href="jinwoosmc/remote_pid.mp4"></a>
+                                    </div>
+                                </div>
+                        </article>
+
+                        <article class="post">
+                            <div class="post-preview"><a href="#"><img src="jinwoosmc/AML_Regulation.jpg" alt=""></a>
+
+                                <div class="post-wrapper">
+                                    <div class="post-header">
+                                        <h2 class="post-title"><a>Enhanced Safety Control Algorithms for Aerial Work
+                                                Platforms</a></h2>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>In addition, although not all detailed in the portfolio, given the paramount
+                                            importance of safety, numerous control algorithms have been incorporated:<br><br>
+
+                                            1. Unexpected Remote Control Signal Loss: Implemented actions for movements
+                                            when remote control signals are unexpectedly interrupted.<br><br>
+                                            2. Velocity Deceleration Before Reaching the Working Range During Platform
+                                            Movement: Applied speed deceleration as the platform approaches the working
+                                            range.<br><br>
+                                            3. Emergency Stop Button: Integrated an emergency stop button for immediate
+                                            halting of operations.<br><br>
+                                            4. Speed Deceleration as Platform Extends: Programmed speed deceleration in
+                                            correlation with the platform's extended length.<br><br>
+                                            5. Handling Communication Disruptions in CAN Network: Developed protocols to
+                                            handle communication interruptions in the CAN network.<br><br></p>
+                                    </div>
+                                </div>
+
+                        </article>
+
+                        <article class="post">
+                            <div class="post-preview"><a href="#"><img src="jinwoosmc/can_protocall.jpg" alt=""></a>
+
+                                <div class="post-wrapper">
+                                    <div class="post-header">
+                                        <h2 class="post-title"><a>CAN communication protocol</a></h2>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>I utilized CAN communication for interfacing and communicating with other controllers.</p>
+                                    </div>
+                                </div>
+
+                        </article>
+
+                        <!-- Post end-->
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog end-->
+
+        <!-- Footer-->
+        <footer class="footer">
+            <div class="footer-widgets">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <!-- Text widget-->
+                            <aside class="widget widget-text">
+                                <div class="widget-title">
+                                    <h6>Contact</h6>
+                                </div>
+                                <div class="textwidget">
+                                    <p>E-mail : andosol9944@gmail.com<br>
+                                        linkedin : <a href="https://www.linkedin.com/in/dosol-an-632a38202">ANDOSOL</a>
+                                    </p>
+                                    <ul class="social-icons">
+                                        <li><a href="https://www.linkedin.com/in/dosol-an-632a38202"><i
+                                                    class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright">
+                                <p>© 2023 ANDOSOL's Portfolio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end-->
+    </div>
+    </div>    
+
+    <!-- To top button--><a class="scroll-top" href="#top"><i class="fas fa-angle-up"></i></a>
+
+    <!-- Scripts-->
+    <script src="assets/js/custom/jquery.min.js"></script>
+    <script src="assets/js/custom/popper.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script>
+    <script src="assets/js/custom/plugins.min.js"></script>
+    <script src="assets/js/custom/custom.min.js"></script>
+</body>
+
+</html>

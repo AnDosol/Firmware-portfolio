@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Firmware_Portfolio">
+    <meta name="author" content="ANDOSOL">
+    <title>Firmware_Portfolio_ANDOSOL</title>
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+    <!-- Web Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600%7cPlayfair+Display:400i" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Plugins-->
+    <link href="assets/css/plugins.min.css" rel="stylesheet">
+    <!-- Template core CSS-->
+    <link href="assets/css/template.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Preloader-->
+    <div class="page-loader">
+        <div class="page-loader-inner">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader end-->
+
+    <!-- Header-->
+    <header class="header header-transparent">
+        <div class="container-fluid">
+            <!-- Brand-->
+            <div class="inner-header"><a class="inner-brand" href="index.html">Firmware_Portfolio_ANDOSOL</a></div>
+            <!-- Navigation-->
+            <div class="inner-navigation collapse">
+                <div class="inner-nav">
+                    <ul>
+                        <li class="menu-item-has-children menu-item-has-mega-menu"><a href="index.html"><span
+                                    class="menu-item-span">Home</span></a>                          
+                        </li>
+
+                        <li class="menu-item-has-children"><a href=""><span class="menu-item-span">Portfolio</span></a>
+                            <ul class="sub-menu">
+                                <li><a href="portfolio-maincontroller.html">Main Controller</a></li>
+                                <li><a href="portfolio-HMI_ECU.html">HMI & ECU</a></li>
+                                <li><a href="portfolio-Remote.html">Remote</a></li>                                
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href="me.html"><span class="menu-item-span">Me</span></a>                            
+                        </li>
+                        <li class="menu-item-has-children"><a href="contact.html"><span class="menu-item-span">Contact</span></a>                     
+                        </li>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header end-->
+
+    <!-- Wrapper-->
+    <div class="wrapper">
+        <!-- Hero-->
+        <section class="module-cover parallax text-center" data-background="Remote_image/remote.jpg" data-overlay="0.8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Remote Controller</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero end-->
+
+        <!-- Blog-->
+        <section class="module">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 m-auto">
+
+                        <!-- Post-->
+                        <article class="post">
+
+                            <div class="modal-video-container">
+                                <img src="Remote_image/Remote_Video.jpg" alt="">
+                                <a class="play-button" href="Remote_image/Remote_Video.mp4"></a>
+                            </div>
+                            <div class="modal-video-container">
+                                <img src="Remote_image/Remote_Video_2.jpg" alt="">
+                                <a class="play-button" href="Remote_image/Remote_Video_2.mp4"></a>
+                            </div>
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title"><a>Remote Controller</a></h2>
+                                </div>
+                                <div class="post-content">
+                                    <p>I developed a wireless remote control using Zigbee wireless communication
+                                        modules.<br><br> It is integrated with the aerial work platform, enabling
+                                        functions such
+                                        as the movement of the platform and controlling the vehicle's engine (On/Off,
+                                        RPM Up/Down). Users can monitor the vehicle's status through a display, which
+                                        can be turned On/Off to extend battery usage time. When the display is Off, the
+                                        signal status is indicated by the LED on the right side.</p>
+                                </div>
+                            </div>
+                            <div class="modal-video-container">
+                                <img src="Remote_image/Remote_Signal.jpg" alt="">
+                                <a class="play-button" href="Remote_image/Remote_Signal.mp4"></a>
+                            </div>
+                        </article>
+                        <!-- Post end-->
+
+                        <!-- Post-->
+                        <article class="post">
+                            <div class="post-preview">
+                                <div class="image-slider owl-carousel"><img src="Remote_image/Remote_1.jpg" alt=""><img
+                                        src="Remote_image/Remote_Artwork.jpg" alt=""><img
+                                        src="Remote_image/Remote_PCB_1.jpg" alt=""><img
+                                        src="Remote_image/Remote_PCB_2.jpg" alt=""><img
+                                        src="Remote_image/Remote_Soldering.jpg" alt=""><img
+                                        src="Remote_image/Remote_wire.jpg" alt=""></div>
+                            </div>
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title"><a>Transmitter Hardware</a></h2>
+                                </div>
+                                <div class="post-content">
+                                    <p><strong>ADC</strong> : Captures joystick input values.<br>
+                                        <strong>CAN</strong> : Enables wired communication by connecting a cable in case
+                                        of wireless signal loss, ensuring continuous functionality.<br>
+                                        <strong>GPIO</strong> : Handles inputs from toggle switches, push buttons,
+                                        etc.<br>
+                                        <strong>USART</strong> : Facilitates communication with the wireless Zigbee
+                                        module.<br><br>
+
+                                        A stable analog reference voltage must be maintained, and chattering phenomena
+                                        need to be prevented. Additionally, if the battery voltage drops below a certain
+                                        threshold, power should be cut off to ensure proper operation.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Post end-->
+
+                        <!-- Post-->
+                        <article class="post">
+                            <div class="image-slider owl-carousel"><img src="Remote_image/Transmitter_Firmware_2.jpg"
+                                    alt=""><img src="Remote_image/Transmitter_Firmware.jpg" alt=""><img
+                                    src="Remote_image/Transmitter_Firmware_3.jpg" alt=""><img
+                                    src="Remote_image/Transmitter_Firmware_4.jpg" alt=""></div>
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title"><a>Transmitter Firmware</a></h2>
+                                </div>
+                                <div class="post-content">
+                                    <p>Firmware development was conducted using Simulink, and components such as CAN,
+                                        USART, and EEPROM were implemented using S-Function blocks as needed.<br><br>
+
+                                        After configuring pin settings using STM32Cube MX, I proceeded to code in
+                                        Simulink.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Post end-->
+
+                        <article class="post">
+                            <div class="post-preview"><img src="Remote_image/Remote_Check.jpg" alt=""></div>
+                            <div class="post-header">
+                                <h2 class="post-title"><a>Checking Remote Control Connection Status</a></h2>
+                            </div>
+                            <div class="post-content">
+                                <p>I developed a basic Simulink program to verify real-time data transmission via
+                                    CAN communication. This program ensured that signals sent from the transmitter
+                                    were accurately received by the receiver. The image above illustrates the
+                                    process of confirming the signals sent from the transmitter to the receiver
+                                    using CAN communication, displayed on a computer monitor</p>
+                            </div>
+                        </article>
+                        <!-- Post-->
+
+                        <article class="post">
+                            <div class="image-slider owl-carousel"><img src="Remote_image/Receiver_PCB.jpg" alt=""><img
+                                    src="Remote_image/Receiver_Artwork.jpg" alt=""><img
+                                    src="Remote_image/Receiver_Soldering.jpg" alt=""></div>
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title"><a>Receiver Hardware</a></h2>
+                                </div>
+                                <div class="post-content">
+                                    <p>I utilized a circuit structure similar to the existing main controller, but
+                                        incorporated an STM32 chip. Additionally, I added a Zigbee module and a
+                                        Bluetooth module to enhance the functionality.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="post">
+                            <div class="image-slider owl-carousel"><img src="Remote_image/Receiver_Firmware.jpg"
+                                    alt=""><img src="Remote_image/Receiver_Firmware_1.jpg" alt=""><img
+                                    src="Remote_image/Receiver_Firmware_2.jpg" alt=""></div>
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title"><a>Receiver Firmware</a></h2>
+                                </div>
+                                <div class="post-content">
+                                    <p>Firmware development was conducted using Simulink, and components such as CAN,
+                                        USART, and EEPROM were implemented using S-Function blocks as needed.
+
+                                        After configuring pin settings using STM32Cube MX, I proceeded to code in
+                                        Simulink.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="post">
+                            <div class="modal-video-container">
+                                <img src="Remote_image/Mobile_App_1.jpg" alt="">
+                                <a class="play-button" href="Remote_image/Mobile_App.mp4"></a>
+                            </div>
+                            <div class="modal-video-container">
+                                <img src="Remote_image/Mobile_App_2.jpg" alt="">
+                                <a class="play-button" href="Remote_image/MOBILE_APP_2.mp4"></a>
+                            </div>
+
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title"><a>Bluetooth App</a></h2>
+                                </div>
+                                <div class="post-content">
+                                    <p>I developed an app that allows users to monitor the vehicle's status on their
+                                        smartphones. In the video, I demonstrate processing Bluetooth data sent from the
+                                        receiver and displaying it on the mobile phone.</p>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <article class="post">
+                            <div class="post-preview"><a href="#"><img src="jinwoosmc/can_protocall.jpg" alt=""></a>
+
+                                <div class="post-wrapper">
+                                    <div class="post-header">
+                                        <h2 class="post-title"><a>CAN communication protocol</a></h2>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>I utilized CAN communication for interfacing and communicating with other
+                                            controllers.</p>
+                                    </div>
+                                </div>
+
+                        </article>
+
+                        <!-- Post end-->                       
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog end-->
+
+        <!-- Footer-->
+        <footer class="footer">
+            <div class="footer-widgets">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <!-- Text widget-->
+                            <aside class="widget widget-text">
+                                <div class="widget-title">
+                                    <h6>Contact</h6>
+                                </div>
+                                <div class="textwidget">
+                                    <p>E-mail : andosol9944@gmail.com<br>
+                                        linkedin : <a href="https://www.linkedin.com/in/dosol-an-632a38202">ANDOSOL</a>
+                                    </p>
+                                    <ul class="social-icons">
+                                        <li><a href="https://www.linkedin.com/in/dosol-an-632a38202"><i
+                                                    class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright">
+                                <p>© 2023 ANDOSOL's Portfolio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end-->
+    </div>
+    </div>
+    <!-- Wrapper end-->    
+
+    <!-- To top button--><a class="scroll-top" href="#top"><i class="fas fa-angle-up"></i></a>
+
+    <!-- Scripts-->
+    <script src="assets/js/custom/jquery.min.js"></script>
+    <script src="assets/js/custom/popper.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script>
+    <script src="assets/js/custom/plugins.min.js"></script>
+    <script src="assets/js/custom/custom.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Firmware_Portfolio">
+    <meta name="author" content="ANDOSOL">
+    <title>Firmware_Portfolio_ANDOSOL</title>
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+    <!-- Web Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600%7cPlayfair+Display:400i" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Plugins-->
+    <link href="assets/css/plugins.min.css" rel="stylesheet">
+    <!-- Template core CSS-->
+    <link href="assets/css/template.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Preloader-->
+    <div class="page-loader">
+        <div class="page-loader-inner">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader end-->
+
+    <!-- Header-->
+    <header class="header header-transparent">
+        <div class="container-fluid">
+            <!-- Brand-->
+            <div class="inner-header"><a class="inner-brand" href="index.html">Firmware_Portfolio_ANDOSOL</a></div>
+            <!-- Navigation-->
+            <div class="inner-navigation collapse">
+                <div class="inner-nav">
+                    <ul>
+                        <li class="menu-item-has-children menu-item-has-mega-menu"><a href="index.html"><span
+                                    class="menu-item-span">Home</span></a>                          
+                        </li>
+
+                        <li class="menu-item-has-children"><a href=""><span class="menu-item-span">Portfolio</span></a>
+                            <ul class="sub-menu">
+                                <li><a href="portfolio-maincontroller.html">Main Controller</a></li>
+                                <li><a href="portfolio-HMI_ECU.html">HMI & ECU</a></li>
+                                <li><a href="portfolio-Remote.html">Remote</a></li>                                
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href="me.html"><span class="menu-item-span">Me</span></a>                            
+                        </li>
+                        <li class="menu-item-has-children"><a href="contact.html"><span class="menu-item-span">Contact</span></a>                     
+                        </li>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header end-->
+
+    <!-- Wrapper-->
+    <div class="wrapper">
+        <!-- Hero-->
+        <section class="module-cover parallax text-center" data-background="HMI_image/HMI_background.jpg"
+            data-overlay="0.8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Human Machine Interface<br>&<br>ECU Controller</h2>
+                        <p>aerial work platform truck system</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero end-->
+
+        <!-- Blog-->
+        <section class="module">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 m-auto">
+
+                        <!-- Post-->
+                        <article class="post">
+                            <div class="modal-video-container">
+                                <img src="HMI_image/HMI_background.jpg" alt="">
+                                <a class="play-button" href="HMI_image/HMI_ECU_video.mp4"></a>
+                            </div>
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title"><a>Human Machine Interface & ECU_Controller</a></h2>
+                                </div>
+                                <div class="post-content">
+                                    <p>The product is designed to connect with the vehicle's ECU, enabling functions
+                                        like toggling the vehicle's ignition On/Off and activating features such as RPM
+                                        UP, DOWN, and PTO using toggle switches. Additionally, these functions can be
+                                        controlled using specific switches on the remote control.<br><br>
+
+                                        Through a touch-screen display, real-time monitoring of sensor values during
+                                        vehicle operation is possible. It also offers the capability to detect sensor
+                                        anomalies and modify sensor parameter values. These adjusted parameters are
+                                        stored in the EEPROM for future reference. Moreover, the EEPROM is programmed to
+                                        automatically retrieve stored parameters upon powering on.
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Post end-->
+
+                        <!-- Post-->
+                        <article class="post">
+                            <div class="post-preview">
+                                <div class="image-slider owl-carousel"><img src="HMI_image/HMI_monitor.jpg" alt=""><img
+                                        src="HMI_image/HMI_Wire.jpg" alt=""><img src="HMI_image/HMI_PCB.jpg" alt=""><img
+                                        src="HMI_image/HMI_Artwork.jpg" alt=""></div>
+                            </div>
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title"><a>Hardware</a></h2>
+                                </div>
+                                <div class="post-content">
+                                    <p>Before hardware design, I analyzed the characteristics of sensors required for
+                                        the system and the features of the system controlled through PCB connections. I
+                                        identified the necessary requirements for communication protocols and interfaces
+                                        such as CAN, I2C, GPIO, and USART, and incorporated them into the
+                                        design.<br><br>
+
+                                        <strong>CAN</strong> : I established the CAN communication connections for data
+                                        exchange with other controllers.<br>
+                                        <strong>I2C</strong> : Utilizing I2C communication, I integrated an ADC module
+                                        with 16-bit resolution.<br>
+                                        <strong>GPIO</strong> : Designed considering the number of ports required for
+                                        sensors and external devices.<br>
+                                        <strong>USART</strong> : Implemented communication with the touch-screen
+                                        display.<br>
+
+                                        <br>In addition, the system can receive input from external toggle switches via
+                                        GPIO. It reads the status of external buttons attached to the toggle switches or
+                                        wireless remote, activating relays to send signals to the vehicle's ECU. This
+                                        allows functions such as ignition control (On/Off), RPM adjustments (UP/Down),
+                                        and activation of the Power Take-Off (PTO) feature.<br><br>
+
+                                        A touch-screen display is integrated, enabling real-time monitoring of various
+                                        sensor states and adjustment of sensor settings.<br><br>
+
+                                        Please note that the phrasing has been adjusted for clarity and smoothness.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Post end-->
+
+                        <!-- Post-->
+                        <article class="post">
+                            <div class="post-preview"><a href="#"><img src="HMI_image/HMI_Firmware.jpg" alt=""></a>
+                            </div>
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title"><a>Firmware</a></h2>
+                                </div>
+                                <div class="post-content">
+                                    <p>The firmware development was conducted using Simulink, and custom S-Function
+                                        blocks in C language were developed for devices such as CAN, I2C, EEPROM, and
+                                        touch-screen displays, as needed.<br><br>
+
+                                        The programming was divided into three main parts<br><br>
+
+                                        <strong>Switch Input and Processing</strong> : Handling operations based on
+                                        switch input states.<br>
+                                        <strong>CAN Communication</strong> : Communication with other connected
+                                        controllers.<br>
+                                        <strong>Display</strong> : Displaying sensor values and allowing adjustment of
+                                        settings, providing
+                                        necessary information to the user.<br><br>
+                                        These techniques were programmed and tested on the MCU using MATLAB and
+                                        Simulink.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Post end-->
+
+                        <!-- Post-->
+                        <article class="post">
+                            <div class="post-preview">
+                                <div class="image-slider owl-carousel"><img src="HMI_image/HMI_Display.jpg" alt=""><img
+                                        src="HMI_image/HMI_Display_2.jpg" alt=""><img src="HMI_image/HMI_Display_3.jpg"
+                                        alt=""><img src="HMI_image/HMI_Display_4.jpg"
+                                        alt=""></div>
+                            </div>
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h2 class="post-title"><a>Human Machine Interface</a></h2>
+                                </div>
+                                <div class="post-content">
+                                    <p>I utilized Nextion's touch-screen display. I designed various screens using
+                                        Nextion's proprietary tool and implemented the ability to input passwords and
+                                        parameter values using provided commands.<br><br> I also designed buttons and screen
+                                        components using Photoshop (allowing for potential modifications in the future).<br><br>
+
+                                        By mastering the basic tools and commands provided by Nextion, diverse display
+                                        configurations can be created. It's a product I personally recommend.<br><br>
+                                    </p>                                   
+                                </div>
+                            </div>
+                        </article>                        
+                        <!-- Post end-->                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog end-->
+
+        <!-- Footer-->
+        <footer class="footer">
+            <div class="footer-widgets">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <!-- Text widget-->
+                            <aside class="widget widget-text">
+                                <div class="widget-title">
+                                    <h6>Contact</h6>
+                                </div>
+                                <div class="textwidget">
+                                    <p>E-mail : andosol9944@gmail.com<br>
+                                        linkedin : <a href="https://www.linkedin.com/in/dosol-an-632a38202">ANDOSOL</a>
+                                    </p>
+                                    <ul class="social-icons">
+                                        <li><a href="https://www.linkedin.com/in/dosol-an-632a38202"><i
+                                                    class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright">
+                                <p>© 2023 ANDOSOL's Portfolio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end-->
+    </div>
+    </div>
+    <!-- Wrapper end-->
+    
+
+    <!-- To top button--><a class="scroll-top" href="#top"><i class="fas fa-angle-up"></i></a>
+
+    <!-- Scripts-->
+    <script src="assets/js/custom/jquery.min.js"></script>
+    <script src="assets/js/custom/popper.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script>
+    <script src="assets/js/custom/plugins.min.js"></script>
+    <script src="assets/js/custom/custom.min.js"></script>
+</body>
+
+</html>
